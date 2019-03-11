@@ -1,6 +1,6 @@
-package appointmentsystem
+package com.latack
 
 class SurgeryController {
 
-    def index() { }
+def scaffold = Surgery
 }
