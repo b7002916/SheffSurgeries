@@ -18,7 +18,7 @@ patientResidence blank: false, nullable: false, maxSize: 20
 patientDob blank: false, nullable: false
 patientID blank: false, nullable: false, unique: true, maxSize: 6
 dateRegistered blank: false, nullable: false
-patientPhone blank: false, nullable: false, min: 11, max: 11 
+patientPhone blank: false, nullable: false, size: 11..11
 
     }
 }
