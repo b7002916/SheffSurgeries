@@ -5,7 +5,7 @@ class Appointment {
 Date appDate
 float appTime
 int appDuration
-String A-1111
+String roomNumber
 
 
 
