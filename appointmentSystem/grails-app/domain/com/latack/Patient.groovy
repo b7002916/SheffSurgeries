@@ -11,5 +11,14 @@ Date dateRegistered
 int patientPhone
 
     static constraints = {
+
+patientName blank: false, nullable: false, maxSize: 25
+patientAddress blank: false, nullable: false, maxSize: 50
+patientResidence blank: false, nullable: false, maxSize: 20
+patientDob blank: false, nullable: false
+patientID blank: false, nullable: false, unique: true, maxSize: 6
+dateRegistered blank: false, nullable: false
+patientPhone blank: false, nullable: false, min: 11, max: 11 
+
     }
 }
