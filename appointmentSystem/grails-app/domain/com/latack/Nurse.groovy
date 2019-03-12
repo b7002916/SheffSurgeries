@@ -6,7 +6,7 @@ String nurseName
 String qualifications
 String nurseEmail
 String nurseOffice
-int nursePhone
+String nursePhone
 
 
     static constraints = {
