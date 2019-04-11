@@ -8,8 +8,12 @@ String nurseEmail
 String nurseOffice
 String nursePhone
 
+static hasMany=[doctors: Doctor, surgeries: Surgery]
+static belongsTo=[Doctor]    
 
-    static constraints = {
+
+
+static constraints = {
 
 nurseName blank: false, nullable: false, maxSize: 25
 qualifications blank: false, nullable: false, widget: 'Qualifications', maxSize: 100

@@ -9,7 +9,7 @@ float totalCost
 Date dateIssued
 Boolean patientPaying
 
-
+static hasMany=[doctors: Doctor, patients: Patient]
 
 
 

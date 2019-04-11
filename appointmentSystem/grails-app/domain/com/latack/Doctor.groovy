@@ -2,6 +2,7 @@ package com.latack
 
 class Doctor {
 
+
 String fullName
 String qualification
 String position
@@ -11,7 +12,14 @@ String doctorOffice
 String doctorPhone
 String bio
 
-    static constraints = {
+Prescription prescriptions   
+
+static hasMany=[surgeries: Surgery, nurses: Nurse, patients: Patient, appointments: Appointment]
+static belongsTo=[Surgery]
+
+
+static constraints = {
+
 
 fullName blank: false, nullable: false, maxSize: 30
 qualification blank: false, nullable: false, maxSize: 100

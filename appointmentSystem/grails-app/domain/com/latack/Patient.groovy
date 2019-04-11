@@ -10,6 +10,12 @@ String patientID
 Date dateRegistered
 String patientPhone
 
+Appointment appointments
+Prescription prescriptions
+
+static hasMany=[surgeries: Surgery, doctors: Doctor]
+
+
     static constraints = {
 
 patientName blank: false, nullable: false, maxSize: 25
